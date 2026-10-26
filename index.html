@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artificial Intelligence — Complete Developer Study Notes</title>
+  <meta name="description" content="A readable web version of the 20-page Artificial Intelligence developer study notes: fundamentals, ML, deep learning, NLP, computer vision, generative AI, RAG, agents, tools, fine-tuning, safety, architecture, projects, and interview prep." />
+  <script>(function(){ try { if (localStorage.getItem('ai-notes-theme') === 'dark') document.documentElement.classList.add('dark'); } catch(e){} })();</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <button class="icon-btn" id="menuBtn" aria-label="Toggle sidebar">☰</button>
+    <span class="brand">🧠 AI — Complete Developer Study Notes</span>
+    <span class="spacer"></span>
+    <input type="search" id="search" class="search" placeholder="Search chapters…" aria-label="Search chapters" />
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar" aria-label="Chapters">
+      <ul id="navList"></ul>
+      <p class="credit">Original notes by <strong>Rahul Yadav</strong><br/>20 pages · web edition</p>
+    </nav>
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- Main -->
+    <main class="content" id="content">
+      <section class="intro" id="home">
+        <h1>Artificial Intelligence</h1>
+        <p class="subtitle">Complete Developer Study Notes</p>
+        <p class="tagline">Concepts · Practical Examples · Interview Preparation</p>
+        <p class="lead">A readable web edition of the 20-page handwritten study notes. Every chapter
+          gives you a clean text version you can search and copy, plus the original hand-drawn page.
+          Use the sidebar to jump to any topic, or the search box to filter.</p>
+        <div class="chip-row" id="chipRow"></div>
+      </section>
+      <div id="chapters"></div>
+      <footer class="site-footer">
+        Web edition rendered from the original study-note pages · Content by Rahul Yadav.
+      </footer>
+    </main>
+  </div>
+
+  <button class="top-btn" id="topBtn" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="notes-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
